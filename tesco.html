@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESCO Bill - Electricity Bill Checker</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="tesco.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="tescoLogo.png" alt="TESCO Logo">
+            <h2 class="logo-title">TESCO Bill Checker</h2>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="tesco.html" class="active">TESCO Bill</a>
+            <a href="https://www.tesco.gov.pk/" target="_blank">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="bill-container">
+            <h1>TESCO BILL</h1>
+            <div class="search-section">
+                <div class="search-form">
+                    <div class="search-options">
+                        <label>
+                            <input type="radio" name="searchType" value="reference" checked>
+                            Reference No
+                        </label>
+                        <label>
+                            <input type="radio" name="searchType" value="customer">
+                            Customer ID
+                        </label>
+                    </div>
+                    <div id="referenceInput" class="search-input">
+                        <div class="input-wrapper">
+                            <input type="text" id="referenceNumber" placeholder="Enter 14-digit reference number" maxlength="14">
+                            <div id="referenceError" class="error-message"></div>
+                        </div>
+                        <div id="billTypeContainer">
+                            <label for="billType">Bill Type:</label>
+                            <select id="billType">
+                                <option value="R">R</option>
+                                <option value="U">U</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="idInput" class="search-input hidden">
+                        <div class="input-wrapper">
+                            <input type="text" id="customerId" placeholder="Enter 10-digit customer ID" maxlength="10">
+                            <div id="idError" class="error-message"></div>
+                        </div>
+                    </div>
+                    <button id="searchBtn" class="search-btn">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-envelope"></i> usamamalik60m@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +92 XXX XXXXXXX</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://www.tesco.gov.pk/" target="_blank">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Emergency Contact</h4>
+                <p><i class="fas fa-phone-alt"></i> TESCO Helpline: 118</p>
+                <p><i class="fas fa-exclamation-triangle"></i> Emergency: 911</p>
+                <p><i class="fas fa-clock"></i> 24/7 Available</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Electricity Bill Checker. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="tesco.js"></script>
+</body>
+</html>
